@@ -11,6 +11,10 @@ app.get('/', (req: Request, res: Response) => {
     res.send('Hello and Welcome');
 });
 
+app.get('/users', (req: Request, res: Response) => {
+    res.send('User Page');
+});
+
 app.listen(port, () => {
     console.log(`Server is running at {port}`);
 });
