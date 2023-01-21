@@ -1,0 +1,17 @@
+version: 2.0
+
+phases:
+  install: 
+    commands: 
+      sudo apt install -y curl
+      curl -fsSL https://deb.nodesource.com/setup_14.x | sudo -E bash - && apt-get install -y nodejs npm
+  pre_build: 
+    commands: 
+      npm install    
+  build: 
+    commands: 
+      npm run build
+  post_build: 
+    commands: 
+      npm start
+  
