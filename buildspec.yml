@@ -16,4 +16,12 @@ phases:
   post_build: 
     commands: 
       # npm start
+
+artifacts:
+  files: 
+    - '**/*'
+  name: sample-node-app-build
+  discard-paths: no
+
+
   
